@@ -1,4 +1,12 @@
-const spinner = (spinnerStartDelay, spinnerFrameDuration) => {
+/**
+ * Function that displays a spinner animation in the terminal
+ * @param {number} spinnerStartDelay - Indicates how long to wait
+ * before showing the spinner in the terminal, in milliseconds
+ * @param {number} spinnerFrameDuration - Indicates the speed in which
+ * each frame of the spinner is rendered in the terminal, in
+ * milliseconds
+ */
+const spinner = (spinnerStartDelay = 0, spinnerFrameDuration = 100) => {
   const stdOutReset = '\r';
   const padding = '   ';
   const spinnerFrames = {
